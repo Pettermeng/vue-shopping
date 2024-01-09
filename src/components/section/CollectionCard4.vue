@@ -12,9 +12,9 @@
                     <router-link to="/">View More</router-link>
                 </div>
             </div>
-            <div class="grid grid-cols-4 grid-flow-col gap-6">
+            <div class="grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-4 gap-6">
                 <figure v-for="(product, index) in products" :key="index">
-                    <router-link to="/collection">
+                    <router-link :to=product.slug>
                         <div class="thumbnail mb-4 overflow-hidden">
                             <img :src="product.thumbnail" class="w-full hover:scale-110 ease-in-out duration-700" alt="">
                         </div>
@@ -46,19 +46,23 @@
     let products = [
         {
             thumbnail : 'https://zandokh.com/image/cache/catalog/products/2023-11/2222306196/Christmas/Open-Back-Top%20(2)-cr-450x672.jpg',
-            name      : 'Knit Cardigan'
+            name      : 'Knit Cardigan',
+            slug      : '/product'
         },
         {
             thumbnail : 'https://zandokh.com/image/cache/catalog/products/2023-11/2222307231/Christmas/High-Wast-Trouser%20(3)-cr-450x672.jpg',
-            name      : 'Bomber Jackets'
+            name      : 'Bomber Jackets',
+            slug      : '/product'
         },
         {
             thumbnail : 'https://zandokh.com/image/cache/catalog/products/2023-12/2122311257/Vest%20(3)-cr-450x672.jpg',
-            name      : 'Abstract Jaquard Sweater'
+            name      : 'Abstract Jaquard Sweater',
+            slug      : '/product'
         },
         {
             thumbnail : 'https://zandokh.com/image/cache/catalog/products/2023-09/2122308223/Christmas/8J6A8744-cr-450x672.jpg',
-            name      : 'Knitted Vest'
+            name      : 'Knitted Vest',
+            slug      : '/product'
         },
     ];
     export default {

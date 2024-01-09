@@ -11,9 +11,12 @@
   "dependencies": {
     "pinia": "^2.1.7",
     "vue": "^3.3.11",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "vue-slick": "^1.2.0",
+    "vue-slick-carousel": "^1.0.6"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
     "@vitejs/plugin-vue": "^4.5.2",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
     "autoprefixer": "^10.4.16",

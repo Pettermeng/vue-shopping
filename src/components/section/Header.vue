@@ -1,6 +1,6 @@
 
 <template>
-    <header class="py-5 shadow-md shadow-gray-100">
+    <header class="py-5 shadow-md shadow-gray-100 sticky top-0 bg-white z-10">
         <div class="container mx-auto">
             <div class="flex items-center justify-between">
                 <div class="hamburger-menu">
